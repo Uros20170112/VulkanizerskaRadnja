@@ -157,7 +157,7 @@ public class AutoGuma {
 	/**
 	 * Poredi dve gume i vraca true ako su iste, a false ako su razlicite.
 	 * 
-	 * Gume se porede po modelu i marki, profilu, sirini i visini i svi moraju da budu isti.
+	 * Gume se porede po modelu i marki, precniku, sirini i visini i svi moraju da budu isti.
 	 * 
 	 * @return 
 	 * <ul>
