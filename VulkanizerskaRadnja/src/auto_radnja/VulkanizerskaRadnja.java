@@ -4,7 +4,16 @@ import java.util.List;
 import java.util.LinkedList;
 import auto_radnja.gume.AutoGuma;
 
+/**
+ * Predstavlja Vuklanizersku radnju koja implementira interfejs Radnja
+ * 
+ * @author Uros Soljaga
+ * @version 0.2
+ */
 public class VulkanizerskaRadnja implements Radnja {
+	/**
+	 * Privatna lista koja sadrzi sve gume implementirana kao LinkedList
+	 */
 	private List<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	@Override
@@ -22,7 +31,7 @@ public class VulkanizerskaRadnja implements Radnja {
 			return null;
 		List<AutoGuma> novaLista = new LinkedList<AutoGuma>();
 		for(int i=0;i<gume.size();i++)
-			if (gume.get(i).equals(markaModel))
+			if (gume.get(i).getMarkaModel().equals(markaModel))
 				novaLista.add(gume.get(i));
 		return novaLista;
 	}
